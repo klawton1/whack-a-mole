@@ -1,7 +1,5 @@
-#dot {
-  height: 20px; 
-  width: 20px;
-  background-color: red;
+.game-board{
+  margin-top: 30px;
 }
 .mole-hole{
   height: 100px;
@@ -12,4 +10,8 @@
 .mole-pic {
   height: 100%;
   width: 100%;
+}
+
+button {
+  margin-bottom: 20px;
 }
