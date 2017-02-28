@@ -53,7 +53,7 @@ function gameController ( $interval,   $timeout ){
       vm.moles[index].shown = true;
       var hideMole = $timeout(function(){
         vm.moles[index].shown = false;
-      }, 1000, 1)
+      }, 1000)
 
       if(vm.gameOff){
         console.log("END GAME")
