@@ -2,8 +2,8 @@ angular
   .module("gameApp")
   .controller("gameController", gameController);
 
-gameController.inject = ["$interval"]
-function gameController ( $interval ){
+gameController.inject = ["$interval", "$timeout"]
+function gameController ( $interval,   $timeout ){
   console.log("connected home controller");
   vm = this;
   vm.score = 0;
@@ -51,7 +51,7 @@ function gameController ( $interval ){
         console.log("showing:", vm.showing);
       }
       vm.moles[index].shown = true;
-      var hideMole = $interval(function(){
+      var hideMole = $timeout(function(){
         vm.moles[index].shown = false;
       }, 1000, 1)
 
